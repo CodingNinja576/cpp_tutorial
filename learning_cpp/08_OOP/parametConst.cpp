@@ -35,9 +35,9 @@ class Chai{
 int main()
 {
 
-  Chai defaultchai("Green tea",5,{"lemon,","water,","tealeaves"});
-  cout<< defaultchai.teaname<< endl;
-  cout<< defaultchai.servings<<endl;
-  defaultchai.dispalychaidetails();
+  Chai lemontea("Green tea",5,{"lemon,","water,","tealeaves"});
+  cout<< lemontea.teaname<< endl;
+  cout<< lemontea.servings<<endl;
+  lemontea.dispalychaidetails();
   return 0;
 }
