@@ -85,5 +85,6 @@ int main()
   chai.setTeaname("Ginger tea");
   chai.setServing(5);
   chai.setIngredients({"water","tealeaves"});
-  chai.displaychaidetails();
+ 
+
 }
