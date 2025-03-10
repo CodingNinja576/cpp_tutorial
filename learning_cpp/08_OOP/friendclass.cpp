@@ -19,7 +19,7 @@ class Chai
     serving = serve;
 
    }  
-   friend bool compareServing(const Chai &cha1,const Chai &chai2);
+   friend bool compareServing(const Chai &chai1,const Chai &chai2);
    //This is a friend function we can also declare clas main function of it is just to give acces oof a private members of any class to any other function or any other classes.....
    void display() const{
     cout<<"teaname"<< teaname<<endl;
