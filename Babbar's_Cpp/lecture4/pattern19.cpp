@@ -8,6 +8,7 @@ int main(){
  
   while(rows<=n){
     int space = n-rows;
+    
       while(space){
         cout<<" ";
         space--;
