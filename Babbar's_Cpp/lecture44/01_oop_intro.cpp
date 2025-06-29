@@ -6,7 +6,32 @@ class Hero{
    // properties
     
     // char name[100];
+    
 
+    // constructor created  ir work as default construcror
+    public :
+     Hero(){
+        cout<<"Constructor called :"<<endl;
+    }
+
+    // parameterized constructor
+
+    Hero(int health){
+
+        cout<<"this valur -->"<<this <<endl;
+        this -> health = health;
+    }
+    Hero(int health, char level){
+        
+        cout<<"this value -->"<<this <<endl;
+        this -> health = health;
+        this->level=level;
+    }
+ 
+    void print(){
+        cout<<"Health : "<<this->health<<endl;
+        cout<<"level"<<this->level<<endl;    
+    }
     private :
 
     int health;
@@ -39,8 +64,25 @@ class Hero{
 };
 
 int main(){
+   
 
-    // static allocation
+
+ // copy constructor called
+   Hero suresh(70, 'C');
+   Hero Ritesh(suresh);
+
+
+    // // object created statically
+    // Hero ramesh(20);
+    // cout<<"address of ramesh is :"<<&ramesh<<endl;
+    // // object created dynamically
+
+    // Hero *h = new Hero;
+
+    // Hero temp(22,'H');
+    
+
+    /*
     Hero ramesh;
     ramesh.sethealth(17);
     ramesh.setlevel ('A');
@@ -76,5 +118,7 @@ int main(){
 
     // cout<<"Health is : "<<ramesh.gethealth()<<endl;
     // cout<<"level is : "<<ramesh.getlevel()<<endl;
+
+    */
     return 0;
 }
