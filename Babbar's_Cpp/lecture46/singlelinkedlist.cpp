@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+#include<map>;
 // insertion at any position 
 // defining nodes
 class Node{
@@ -112,6 +113,22 @@ void print(Node* &head){
 
 
 }
+bool detectloop(Node* head){
+    if (head == NULL){
+        return false;
+    }
+    map<Node*,bool> visited;
+    Node* temp = head;
+    while(temp!=NULL){
+        if(visited[temp]==true){
+            return true; // means cycle is present
+        }
+        visited[temp]==true;
+        temp = temp -> next;
+    }
+    return false;
+}
+
 int main(){
 
     Node *node1 = new Node(10);
