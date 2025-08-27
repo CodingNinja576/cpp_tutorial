@@ -19,3 +19,4 @@ int main(){
   int pivot = findpivot(arr,5);
   cout<<"pivot of the array is "<< pivot<<endl;
 }
+///
